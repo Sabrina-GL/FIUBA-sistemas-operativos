@@ -1,13 +1,19 @@
 # sched
 
 # Parte 1
-Las imagenes se encuentran en la carpeta "seguimiento_parte1"
-Primero ponemos un breakpoint en context_switch (imagen1)
-Luego empezamos a ejecutar desde ese punto y vemos el estado actual de los registros (imagen2) 
-Luego vemos el estado de stack (imagen3)
-Despues vamos avanzando de a paso y viendo como cambia el stack (imagenes 4 a 8)
-Luego vemos los registros antes de llamar a iret (imagen9)
-Y finalmente vemos como se cambian los registros luego de ejecutar iret(imagen10)
+Las imagenes se encuentran en la carpeta "seguimiento_parte1".
+
+Primero ponemos un breakpoint en context_switch (imagen1).
+
+Luego empezamos a ejecutar desde ese punto y vemos el estado actual de los registros (imagen2).
+
+Luego vemos el estado de stack (imagen3).
+
+Despues vamos avanzando de a paso y viendo como cambia el stack (imagenes 4 a 8).
+
+Luego vemos los registros antes de llamar a iret (imagen9).
+
+Y finalmente vemos como se cambian los registros luego de ejecutar iret(imagen10).
 
 
 # Parte 3
@@ -16,7 +22,7 @@ Y finalmente vemos como se cambian los registros luego de ejecutar iret(imagen10
 
 Nuestro scheduler por prioridades es del tipo Multi-level Feedback Queue (MLFQ), basado en un sistema de cola de prioridades con 5 niveles, siendo q4 la cola de mayor prioridad y q0 la menor. En un principio, todos los procesos comienzan en la cola de mayor prioridad (q4), y se establecen sus contadores del proceso de ejecuciones en la cola actual en 0.
 
-La selección del siguiente proceso a correr comienza en la cola de mayor prioridad, y sino hay procesos listos en esa cola, se continúa por la cola de prioridad inferior hasta acabar en q0. En una misma cola, se aplica la lógica del Round Robin para seleccionar un proceso disponible, y este se ejecuta. Sino se encuentra un proceso para correr, y el proceso actual está en ejecucion, el scheduloer lo vuelve a ejecutar. En caso de no haber ningún proceso disponible, el scheduler entra en un estado de espera (halt).
+La selección del siguiente proceso a correr comienza en la cola de mayor prioridad, y si no hay procesos listos en esa cola, se continúa por la cola de prioridad inferior hasta acabar en q0. En una misma cola, se aplica la lógica del Round Robin para seleccionar un proceso disponible, y este se ejecuta. Si no se encuentra un proceso para correr, y el proceso actual está en ejecucion, el scheduler lo vuelve a ejecutar. En caso de no haber ningún proceso disponible, el scheduler entra en un estado de espera (halt).
 
 Una vez elegido un proceso a ejecutar, su contador de ejecuciones en la cola actual aumenta, y una vez que este supera las 10 máximas ejecuciones permitidas, el proceso es degradado a la siguiente cola de menor prioridad, y su contador es reseteado. De esta manera, el scheduler puede aprender sobre el comportamiento de los procesos, y así los procesos más exigentes bajarán su prioridad, lo que le permite al scheduler poder predecir y adaptar su planifiación.
 
