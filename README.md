@@ -5,7 +5,7 @@ Repositorio con los trabajos prácticos de la materia [**Sistemas Operativos**](
 **Curso:** Méndez  
 **Año de cursada:** 2024
 
-📝 [**Apuntes en Notion**](./https://app.notion.com/p/Sistemas-Operativos-3c49df20110d80768f9dec7b9adec550?source=copy_link//)
+📝 [**Apuntes en Notion**](https://app.notion.com/p/Sistemas-Operativos-3c49df20110d80768f9dec7b9adec550?source=copy_link)
 
 ## Trabajos Prácticos
 
