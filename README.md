@@ -1,11 +1,11 @@
 # Sistemas Operativos (7508) - FIUBA
 
-Repositorio con los trabajos prácticos de la materia **Sistemas Operativos** de la **Facultad de Ingeniería de la Universidad de Buenos Aires (FIUBA)**.
+Repositorio con los trabajos prácticos de la materia [**Sistemas Operativos**](./https://fisop.github.io/website//) de la **Facultad de Ingeniería de la Universidad de Buenos Aires (FIUBA)**.
 
 **Curso:** Méndez  
 **Año de cursada:** 2024
 
----
+📝 [**Apuntes en Notion**](./https://app.notion.com/p/Sistemas-Operativos-3c49df20110d80768f9dec7b9adec550?source=copy_link//)
 
 ## Trabajos Prácticos
 
@@ -21,22 +21,3 @@ Repositorio con los trabajos prácticos de la materia **Sistemas Operativos** de
 
 ### 4. [fisopfs - Filesystem FUSE](./fisopfs/)
 *Trabajo grupal* - Implementación de un sistema de archivos en espacio de usuario utilizando **FUSE (Filesystem in USErspace)**.
-
-
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-| Tecnología | Uso |
-|------------|-----|
-| **C11 / POSIX** | Lenguaje principal y estándar de syscalls |
-| **Fork / Exec / Wait** | Creación y gestión de procesos |
-| **Pipes** | Comunicación entre procesos (IPC) |
-| **Dup2** | Redirección de flujos estándar |
-| **Signals** | Manejo de SIGCHLD para procesos en background |
-| **FUSE** | Implementación de filesystem en espacio de usuario |
-| **Assembler x86** | Cambio de contexto en JOS |
-| **QEMU / GDB** | Emulación y depuración de bajo nivel |
-| **Make / GCC** | Compilación y automatización |
-| **Valgrind** | Detección de memory leaks |
